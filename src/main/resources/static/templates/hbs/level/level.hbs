@@ -1,0 +1,73 @@
+<script type="text/x-handlebars-template">
+  {{answersVar}}
+
+     <div class="row">
+      <div class="col-12">
+        <p class="lead">{{level.title}}</p>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-8">
+        <p id="mainText" class="lead">{{level.mainText}}</p>
+      </div>
+      <div class="col-4"> 
+
+        {{#if (notEmpty level.img)}}
+            <img src="{{level.img}}" class="img-fluid" alt="Responsive image">
+        {{else}}
+        {{!-- no img --}}
+        {{/if}}
+      </div>
+
+
+    </div>
+  {{#if level.requiresAnswer}}
+      <div class="row mt-3">
+        <div class="col-4"> </div>
+            <div class="col-4">
+              <div class="input-group mb-3">
+                <input id="answer" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-4"> </div>
+      </div>
+      <div class="row mt-1 mb-4">
+        <div class="col-4"> </div>
+        <div class="col-4">
+          <button id="validateAnswer" onclick="validateAnswer('{{gameTracker}}',{{level.id}})" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Validate</button>
+          <p id="answerFeedback" class="lead"></p>
+        </div>
+        <div class="col-4"> </div>
+    </div>
+
+        <div class="row">
+      <div class="col-4"> </div>
+      <div class="col-4">
+          <button id="continue" style="display: none;" onclick="loadLevel('{{gameTracker}}',{{nextLevel}})" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">continue</a>
+      </div>
+      <div class="col-4"> </div>
+
+
+    </div>
+  {{else}}
+        <div class="row">
+          <div class="col-4"> </div>
+          <div class="col-4">
+              <button id="continue" onclick="loadLevel('{{gameTracker}}',{{nextLevel}})" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">continue</a>
+          </div>
+          <div class="col-4"> </div>
+
+
+        </div>
+
+  {{/if}}
+
+
+
+
+
+
+  </script>

@@ -1,0 +1,59 @@
+{
+  "type":"game",
+  "levels": [
+    {
+
+      "type": "T0",
+      "title": "test",
+      "mainText": "MAIN TEXT TO EXPLAIN THE RIDDLE",
+      "img" : ""
+    },
+    {
+
+      "type": "T0",
+      "title": "test",
+      "mainText": "MAIN TEXT TO EXPLAIN THE RIDDLE",
+      "img" : "",
+      "answer" : "4567",
+      "correctAnswer": [
+        "Congratulations",
+        "OK"
+      ],
+      "wrongAnswer": [
+        "NO",
+        "that's wrong"
+      ]
+
+
+    },
+    {
+
+      "type": "T0",
+      "title": "test",
+      "countdown": 60,
+      "mainText": "MAIN TEXT TO EXPLAIN THE RIDDLE",
+      "img" : "",
+      "answer" : "4567 aaa aaa",
+      "correctAnswer": [
+        "Congratulations",
+        "OK"
+      ],
+      "wrongAnswer": [
+        "NO",
+        "that's wrong"
+      ],
+      "hints": [
+        "look around",
+        "have you tried X and y"
+      ]
+
+
+    },     {
+
+      "type": "T0",
+      "title": "test",
+      "mainText": "END OF THE GAME CONGRATS",
+      "img" : ""
+    }
+  ]
+}
