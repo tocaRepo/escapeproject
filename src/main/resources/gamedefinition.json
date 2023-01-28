@@ -1,18 +1,23 @@
 {
-  "type":"game",
+  "id":"EscapeGame",
+  "title":"the very first escape",
+  "description":"description for the game",
+  "type" : "game",
+  "status" : "draft",
   "levels": [
     {
-
+      "id":0,
       "type": "T0",
       "title": "test",
-      "mainText": "MAIN TEXT TO EXPLAIN THE RIDDLE",
-      "img" : ""
+      "mainText": "Introduction without any riddle, welcome! ",
+      "img" : "/img/generic.png",
+      "requiresAnswer":false
     },
     {
-
+      "id":1,
       "type": "T0",
       "title": "test",
-      "mainText": "MAIN TEXT TO EXPLAIN THE RIDDLE",
+      "mainText": "RIDDLE NUMBER 1",
       "img" : "",
       "answer" : "4567",
       "correctAnswer": [
@@ -22,16 +27,16 @@
       "wrongAnswer": [
         "NO",
         "that's wrong"
-      ]
-
+      ],
+      "requiresAnswer":true
 
     },
     {
-
+      "id":2,
       "type": "T0",
       "title": "test",
       "countdown": 60,
-      "mainText": "MAIN TEXT TO EXPLAIN THE RIDDLE",
+      "mainText": "Riddle number 2",
       "img" : "",
       "answer" : "4567 aaa aaa",
       "correctAnswer": [
@@ -45,15 +50,16 @@
       "hints": [
         "look around",
         "have you tried X and y"
-      ]
-
+      ],
+      "requiresAnswer":true
 
     },     {
-
+      "id":3,
       "type": "T0",
       "title": "test",
-      "mainText": "END OF THE GAME CONGRATS",
-      "img" : ""
+      "mainText": "END OF THE GAME CONGRATS, no riddle here",
+      "img" : "",
+      "requiresAnswer":false
     }
   ]
 }

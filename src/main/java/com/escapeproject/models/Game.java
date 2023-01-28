@@ -25,6 +25,8 @@ public class Game {
     private String id;
     @JsonProperty("title")
     private String title;
+    @JsonProperty("description")
+    private String description;
     @JsonProperty("type")
     private String type;
     @JsonProperty("status")
@@ -46,6 +48,15 @@ public class Game {
     @JsonProperty("title")
     public String getTitle() {
         return title;
+    }
+
+    @JsonProperty("description")
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    @JsonProperty("description")
+    public String getDescription() {
+        return description;
     }
 
     @JsonProperty("title")
